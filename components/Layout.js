@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from './Footer'
+
 export default function Layout({ children }) {
     return (
         <>
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
             <main>
                 {children}
             </main>
+
             <Hero />
 
             <Footer />

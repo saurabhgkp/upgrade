@@ -6,10 +6,12 @@ const Hero = () => {
 
             <div id="hot-deal" class="section">
 
-                <div class="container bg-image">
+                <div class="container">
 
                     <div class="row">
                         <div class="col-md-12">
+                            <img src="./img/gamming.jpg" alt="" />
+                            <img src="./img/gamming.jpg" alt="" />
                             <div class="hot-deal">
                                 <ul class="hot-deal-countdown">
                                     <li>

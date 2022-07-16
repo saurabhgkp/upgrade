@@ -158,12 +158,12 @@ export default function Home({ data }) {
     )
 }
 
-export async function getStaticProps() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10")
-    const data = await res.json()
-    return {
-        props: {
-            data
-        }
-    }
-}
+// export async function getStaticProps() {
+//     // const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10")
+//     // const data = await res.json()
+//     return {
+//         props: {
+//             data
+//         }
+//     }
+// }
