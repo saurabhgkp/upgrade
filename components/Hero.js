@@ -9,8 +9,8 @@ const Hero = () => {
                 <div class="container-fluid">
 
                     <div class="row">
-                        <div class="col-md-6 ml-0">
-                            <img src="./img/gamming.jpg" alt="" />
+                        <div class="col-md-6 col-ms-12 ml-0">
+                            <img class="img-rounded" src="./img/gamming.jpg" alt="" />
                         </div>
                         <div class='col-md-6 mr-0' >
                             <div class="hot-deal">
