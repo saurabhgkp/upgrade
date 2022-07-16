@@ -36,7 +36,7 @@ const Hero = () => {
 
                                 </ul>
                                 <h2 class="text-uppercase">Powerfull Gaming CPU</h2>
-                                <p>GTA 5</p>
+                                <h3 class="b">Grand Theft Auto V</h3>
                                 <a class="primary-btn cta-btn" href="#tab1">Shop now</a>
                             </div>
 
