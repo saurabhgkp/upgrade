@@ -6,41 +6,42 @@ const Hero = () => {
 
             <div id="hot-deal" class="section">
 
-                <div class="container bg-image">
+                <div class="container-fluid">
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6 ml-0">
+                            <img src="./img/gamming.jpg" alt="" />
+                        </div>
+                        <div class='col-md-6 mr-0' >
                             <div class="hot-deal">
                                 <ul class="hot-deal-countdown">
                                     <li>
                                         <div>
-                                            <h3>02</h3>
-                                            <span>Days</span>
+                                            <h3>1080</h3>
+                                            <span>P</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <h3>10</h3>
-                                            <span>Hours</span>
+                                            <h3>Normal</h3>
+                                            <span>Setting</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <h3>34</h3>
-                                            <span>Mins</span>
+                                            <h3>60 FPS</h3>
+                                            <span>Approx</span>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div>
-                                            <h3>60</h3>
-                                            <span>Secs</span>
-                                        </div>
-                                    </li>
+
                                 </ul>
-                                <h2 class="text-uppercase">hot deal this week</h2>
-                                <p>New Collection Up to 50% OFF</p>
-                                <a class="primary-btn cta-btn" href="#">Shop now</a>
+                                <h2 class="text-uppercase">Powerfull Gaming CPU</h2>
+                                <p>Up to 20% OFF</p>
+                                <a class="primary-btn cta-btn" href="#tab1">Shop now</a>
                             </div>
+
+
+
                         </div>
                     </div>
 

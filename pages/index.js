@@ -26,10 +26,10 @@ export default function Home({ data }) {
                             <div class="col-md-4 col-xs-6">
                                 <div class="shop">
                                     <div class="shop-img">
-                                        <img src="./img/game.jpg" alt="" />
+                                        <img src="./img/office1.jpg" alt="" />
                                     </div>
                                     <div class="shop-body">
-                                        <h3>Smooth Gaming <br />Experience</h3>
+                                        <h3>Office as well as <br />Gaming</h3>
                                         <a href="#tab1" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@ export default function Home({ data }) {
                                         <img src="./img/gam.jpg" alt="" />
                                     </div>
                                     <div class="shop-body">
-                                        <h3>Smooth Gaming <br />Experience</h3>
+                                        <h3>High Quality <br />productive</h3>
                                         <a href="#tab1" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
                                     </div>
                                 </div>
