@@ -65,82 +65,174 @@ export default function Home({ data }) {
                                 <div class="row">
                                     <div class="products-tabs">
 
-                                        <div id="tab1" class="tab-pane active">
+                                        <div id="tab1" class="">
                                             <div class="products-slick" data-nav="#slick-nav-1">
+                                                {/* ////////////// */}
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-0">
+                                                        <img class="img-responsive" src="./img/cabnet.jpg" alt="" />
+                                                    </div><br />
+                                                    <div class='col-md-6 mr-0' >
+                                                        <div class="hot-deal">
+                                                            <h3 class="text-uppercase bg-primary ">Office PC</h3>
+                                                            <span class="sale">
+                                                                <h4 class="text-danger">Processer  </h4>
+                                                                <h5> Intel Core i3-3240 3.4 GHz Socket 2 Cores 4 Threads 3 MB Smart Cache </h5>
+                                                                <h4 class="text-danger">Mother board </h4>
+                                                                <h5>Zebronics H61 Motherboard Intel LGA 1155 Socket | 6USB,1VGA,1LAN,1Audio,1HDMI Port </h5>
+                                                                <h4 class="text-danger">RAM  </h4>
+                                                                <h5> Simmtronics 4GB DDR3 Desktop RAM 1333 MHz (PC 10600) with 3 Year Warranty </h5>
+                                                                <h4 class="text-danger">SSD</h4>
+                                                                <h5> Crucial MX500 500GB 6.35 cm (2.5-inch) SSD</h5>
+                                                                <h4 class="text-danger">Cabinet</h4>
+                                                                <h5> Corsair Carbide SPEC-05 Mid-Tower Gaming Case - Black</h5>
+                                                            </span>
 
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                                 <div class="product">
-                                                    <div class="product-img">
-                                                        <img src="./img/cabnet.jpg" alt="" />
-                                                        <div class="product-label">
-                                                            <span class="sale">-30%</span>
-                                                            <span class="new">NEW</span>
-                                                        </div>
-                                                    </div>
                                                     <div class="product-body">
-                                                        <p class="product-category">Category</p>
+                                                        {/* <p class="product-category">Category</p> */}
                                                         <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                                        <h4 class="product-price">₹35,000 <del
-                                                            class="product-old-price">₹40,000</del></h4>
-                                                        <div class="product-rating">
+                                                        <h4 class="product-price">₹24,999 <del
+                                                            class="">₹30,000</del></h4>
+                                                        {/* <div class="product-rating">
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <div class="product-btns">
-                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                                class="tooltipp">add to wishlist</span></button>
-                                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                                class="tooltipp">add to compare</span></button>
-                                                            <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                                class="tooltipp">quick view</span></button>
+                                                        </div> */}
+                                                        <a class="primary-btn cta-btn" href="#tab1">Shop now</a>
+                                                    </div>
+
+                                                </div>
+                                                {/* //////////////////// */}
+
+                                                {/* ////////////// */}
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-0">
+                                                        <img class="img-responsive" src="./img/cabnet.jpg" alt="" />
+                                                    </div><br />
+                                                    <div class='col-md-6 mr-0' >
+                                                        <div class="hot-deal">
+                                                            <h3 class="text-uppercase bg-primary ">Office PC</h3>
+                                                            <span class="sale">
+                                                                <h4 class="text-danger">Processer  </h4>
+                                                                <h5> Intel Core i3-3240 3.4 GHz Socket 2 Cores 4 Threads 3 MB Smart Cache </h5>
+                                                                <h4 class="text-danger">Mother board </h4>
+                                                                <h5>Zebronics H61 Motherboard Intel LGA 1155 Socket | 6USB,1VGA,1LAN,1Audio,1HDMI Port </h5>
+                                                                <h4 class="text-danger">RAM  </h4>
+                                                                <h5> Simmtronics 4GB DDR3 Desktop RAM 1333 MHz (PC 10600) with 3 Year Warranty </h5>
+                                                                <h4 class="text-danger">SSD</h4>
+                                                                <h5> Crucial MX500 500GB 6.35 cm (2.5-inch) SSD</h5>
+                                                                <h4 class="text-danger">Cabinet</h4>
+                                                                <h5> Corsair Carbide SPEC-05 Mid-Tower Gaming Case - Black</h5>
+                                                            </span>
+
                                                         </div>
                                                     </div>
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                            cart</button>
+
+                                                </div>
+                                                <div class="product">
+                                                    <div class="product-body">
+                                                        {/* <p class="product-category">Category</p> */}
+                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                        <h4 class="product-price">₹34,990 <del
+                                                            class="">₹40,000</del></h4>
+                                                        {/* <div class="product-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div> */}
+                                                        <a class="primary-btn cta-btn" href="#tab1">Shop now</a>
                                                     </div>
+
+                                                </div>
+                                                {/* //////////////////// */}
+                                                {/* ////////////// */}
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-0">
+                                                        <img class="img-responsive" src="./img/cabnet.jpg" alt="" />
+                                                    </div><br />
+                                                    <div class='col-md-6 mr-0' >
+                                                        <div class="hot-deal">
+                                                            <h3 class="text-uppercase bg-primary ">Office PC</h3>
+                                                            <span class="sale">
+                                                                <h4 class="text-danger">Processer  </h4>
+                                                                <h5> Intel Core i3-3240 3.4 GHz Socket 2 Cores 4 Threads 3 MB Smart Cache </h5>
+                                                                <h4 class="text-danger">Mother board </h4>
+                                                                <h5>Zebronics H61 Motherboard Intel LGA 1155 Socket | 6USB,1VGA,1LAN,1Audio,1HDMI Port </h5>
+                                                                <h4 class="text-danger">RAM  </h4>
+                                                                <h5> Simmtronics 4GB DDR3 Desktop RAM 1333 MHz (PC 10600) with 3 Year Warranty </h5>
+                                                                <h4 class="text-danger">SSD</h4>
+                                                                <h5> Crucial MX500 500GB 6.35 cm (2.5-inch) SSD</h5>
+                                                                <h4 class="text-danger">Cabinet</h4>
+                                                                <h5> Corsair Carbide SPEC-05 Mid-Tower Gaming Case - Black</h5>
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="product">
+                                                    <div class="product-body">
+                                                        {/* <p class="product-category">Category</p> */}
+                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                        <h4 class="product-price">₹49,990 <del
+                                                            class="">₹55,000</del></h4>
+                                                        {/* <div class="product-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div> */}
+                                                        <a class="primary-btn cta-btn" href="#tab1">Shop now</a>
+                                                    </div>
+
+                                                </div>
+                                                {/* //////////////////// */}
+                                                {/* ////////////// */}
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-0">
+                                                        <img class="img-responsive" src="./img/cabnetw.jpg" alt="" />
+                                                    </div><br />
+                                                    <div class='col-md-6 mt-5' >
+                                                        <div class="hot-deal">
+                                                            <ul class="hot-deal-countdown">
+                                                                <li>
+                                                                    <div>
+                                                                        <h3>COMING</h3>
+                                                                        <span>COMING</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <h3>SOON</h3>
+                                                                        <span>SOON</span>
+                                                                    </div>
+                                                                </li>
+
+
+
+                                                            </ul>
+                                                            <h2 class="text-uppercase">Powerfull Gaming CPU</h2>
+                                                            <h3 class="b"></h3>
+                                                            <a class="primary-btn cta-btn" href="#tab1">WATING</a>
+                                                        </div>
+
+                                                    </div>
+
                                                 </div>
 
-                                                <div class="product">
-                                                    <div class="product-img">
-                                                        <img src="./img/cabnet.jpg" alt="" />
-                                                        <div class="product-label">
-                                                            <span class="new">NEW</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-body">
-                                                        <p class="product-category">Category</p>
-                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                                        <h4 class="product-price">₹25,000 <del
-                                                            class="product-old-price">₹30,000</del></h4>
-                                                        <div class="product-rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                        </div>
-                                                        <div class="product-btns">
-                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                                class="tooltipp">add to wishlist</span></button>
-                                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                                class="tooltipp">add to compare</span></button>
-                                                            <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                                class="tooltipp">quick view</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                            cart</button>
-                                                    </div>
-                                                </div>
-
-
-
+                                                {/* //////////////////// */}
                                             </div>
-                                            <div id="slick-nav-1" class="products-slick-nav"></div>
+
                                         </div>
 
                                     </div>

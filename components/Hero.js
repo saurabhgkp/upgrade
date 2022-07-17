@@ -11,7 +11,7 @@ const Hero = () => {
                     <div class="row">
                         <div class="col-md-6 col-ms-12 ml-0">
                             <img class="img-responsive" src="./img/gamming.jpg" alt="" />
-                        </div>
+                        </div><br />
                         <div class='col-md-6 mr-0' >
                             <div class="hot-deal">
                                 <ul class="hot-deal-countdown">
