@@ -73,8 +73,8 @@ export default function Home({ data }) {
                                                         <img class="img-responsive" src="./img/cabnet.jpg" alt="" />
                                                     </div><br />
                                                     <div class='col-md-6 mr-0' >
-                                                        <div class="hot-deal">
-                                                            <h3 class="text-uppercase bg-primary ">Office PC</h3>
+                                                        <div class=" card">
+                                                            <h3 class="text-uppercase  ">Office PC</h3>
                                                             <span class="sale">
                                                                 <h4 class="text-danger">Processer  </h4>
                                                                 <h5> Intel Core i3-3240 3.4 GHz Socket 2 Cores 4 Threads 3 MB Smart Cache </h5>
@@ -157,7 +157,7 @@ export default function Home({ data }) {
                                                 {/* ////////////// */}
                                                 <div class="row">
                                                     <div class="col-md-6 ml-0">
-                                                        <img class="img-responsive" src="./img/cabnet.jpg" alt="" />
+                                                        <img class="img-responsive" src="./img/cabnet52.png" alt="" />
                                                     </div><br />
                                                     <div class='col-md-6 mr-0' >
                                                         <div class="hot-deal">
