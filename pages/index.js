@@ -17,11 +17,11 @@ export default function Home({ data }) {
                                 <div className="col-6 col-sm-6 col-md-4 col-xl-3 col-xxl-2" >
                                     <div className="app-card app-card-doc shadow-sm h-100">
                                         <img
-                                            className="thumb-image"
+                                            className="thumb-image "
                                             src={data[item].Image}
                                             alt=""
                                         />
-                                        <div className="app-card-body p-1 has-card-actions">
+                                        <div className="app-card-body p-1 has-card-actions text-center">
                                             <h3 className="product-name"><a href="#">{data[item].Name} </a></h3>
                                             <div className="app-doc-meta">
                                                 <ul className="list-unstyled mb-0">
