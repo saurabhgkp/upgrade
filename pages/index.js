@@ -14,7 +14,7 @@ export default function Home({ data }) {
                         return (<div key={i} >
 
                             {(data[item].Image) ?
-                                <div className="col-6 col-md-4 col-xl-3 col-xxl-2" >
+                                <div className="col-6 col-sm-6 col-md-4 col-xl-3 col-xxl-2" >
                                     <div className="app-card app-card-doc shadow-sm h-100">
                                         <img
                                             className="thumb-image"
