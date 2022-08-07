@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Title from '../components/Title'
+import { Link } from 'next/link'
 export default function Home({ data }) {
     //console.log(data.Data, "=======");
     return (
@@ -15,6 +16,7 @@ export default function Home({ data }) {
 
                             {(data[item].Image) ?
                                 <div className="col-6 col-sm-6 col-md-4 col-xl-3 col-xxl-2" >
+                                    {/* <Link href={`/ItemDetail/${data[item].id}`} ><a>mm</a></Link> */}
                                     <div className="app-card app-card-doc shadow-sm h-100">
                                         <img
                                             className="thumb-image "
@@ -34,6 +36,7 @@ export default function Home({ data }) {
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 : ""}
                         </div>
@@ -41,9 +44,9 @@ export default function Home({ data }) {
                     })}
                 </div>
                 <div className="container">
-                    <div className="row ">
+                    <div className="row h-250 ">
                         <div className="col-md-6 ml-0">
-                            <img className="img-responsive" src="./img/cabnetw.jpg" alt="" />
+                            <img className="img-responsive img-rounded h-200" src="./img/cabnetw.jpg" alt="" />
                         </div><br /><br />
                         <div className='col-md-6 mt-5' >
                             <div className="hot-deal ">
