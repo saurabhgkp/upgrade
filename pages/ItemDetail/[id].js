@@ -1,5 +1,5 @@
 
-
+import Link from "next/link"
 const ItemDetail = ({ data }) => {
 
 
@@ -26,6 +26,12 @@ const ItemDetail = ({ data }) => {
                                             className="">₹{data[0].OldPrice}</del></h4></li>
 
                                     </ul>
+                                </div>
+                                <div class="add-to-cart">
+                                    <Link href={`/Checkout/${data[0].id}`} ><a>
+                                        <button class="add-to-cart-btn  " ><i class="fa fa-shopping-cart"></i> SHOP NOW
+                                        </button></a></Link>
+
                                 </div>
                             </div>
                         </div>

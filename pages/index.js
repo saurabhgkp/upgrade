@@ -26,8 +26,9 @@ export default function Home({ data }) {
 
                             {(data[item].id) ?
                                 <div className=" col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6" >
-                                    <Link href={`/ItemDetail/${data[item].id}`} ><a>
-                                        <div class="product">
+                                    <div class="product">
+                                        <Link href={`/ItemDetail/${data[item].id}`} ><a>
+
                                             <div class="img-fluid text-center">
                                                 <img src={data[item].Image} alt="" />
                                             </div>
@@ -37,14 +38,15 @@ export default function Home({ data }) {
                                                 <h4 class="product-price">₹{data[item].Price} <del
                                                     class="product-old-price">₹{data[item].OldPrice}</del></h4>
                                             </div>
-                                            <div class="add-to-cart">
-
+                                        </a></Link>
+                                        <div class="add-to-cart">
+                                            <Link href={`/Checkout/${data[item].id}`} ><a>
                                                 <button class="add-to-cart-btn  " ><i class="fa fa-shopping-cart"></i> SHOP NOW
-                                                </button>
+                                                </button></a></Link>
 
-                                            </div>
                                         </div>
-                                    </a></Link>
+                                    </div>
+
                                 </div>
 
                                 : ""}

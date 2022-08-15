@@ -19,6 +19,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
+    "/Checkout/[Checkout]": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/Checkout/[Checkout].js"
+    ],
     "/ItemDetail/[id]": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
