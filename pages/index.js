@@ -1,29 +1,37 @@
 import styles from '../styles/Home.module.css'
-import Title from '../components/Title'
-import { Link } from 'next/link'
+import Head from "next/head";
+
 export default function Home({ data }) {
     //console.log(data.Data, "=======");
     return (
         <>
+            <Head>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
 
+
+
+            </Head>
 
 
             <div className="section">
 
+
+
+                <hr />
                 <div className="container mt-3">
                     {Object.keys(data).map((item, i) => {
                         return (<div key={i} >
 
-                            {(data[item].Image) ?
-                                <div className="col-6 col-sm-6 col-md-4 col-xl-3 col-xxl-2" >
+                            {(data[item].id) ?
+                                <div className=" col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6" >
                                     {/* <Link href={`/ItemDetail/${data[item].id}`} ><a>mm</a></Link> */}
-                                    <div className="app-card app-card-doc shadow-sm h-100">
+                                    <div className="app-card app-card-doc shadow-sm h-150">
                                         <img
-                                            className="thumb-image "
+                                            className="thumb-image  "
                                             src={data[item].Image}
                                             alt=""
                                         />
-                                        <div className="app-card-body p-1 has-card-actions text-center">
+                                        <div className="app-card-body p-1 has-card-actions ml-5">
                                             <h3 className="product-name"><a href="#">{data[item].Name} </a></h3>
                                             <div className="app-doc-meta">
                                                 <ul className="list-unstyled mb-0">
@@ -36,48 +44,40 @@ export default function Home({ data }) {
                                             </div>
                                         </div>
                                     </div>
+                                    <nav class="navbar   bg-dark navbar-dark">
+
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                            Navbar
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item h3">
+                                                    <div class="container text-light">
+
+                                                        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+                                                        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+                                                        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
 
                                 </div>
+
                                 : ""}
                         </div>
                         )
                     })}
                 </div>
-                <div className="container">
-                    <div className="row h-250 ">
-                        <div className="col-md-6 ml-0">
-                            <img className="img-responsive img-rounded h-200" src="./img/cabnetw.jpg" alt="" />
-                        </div><br /><br />
-                        <div className='col-md-6 mt-5' >
-                            <div className="hot-deal ">
-                                <ul className="hot-deal-countdown">
-                                    <li>
-                                        <div>
-                                            <h3>COMING</h3>
-                                            <span>COMING</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <h3>SOON</h3>
-                                            <span>SOON</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <h2 className="text-uppercase">Powerfull Gaming CPU</h2>
-                                <h3 className="b"></h3>
-                                <a className="primary-btn cta-btn" href="#tab1">WATING</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                <hr />
 
             </div>
 
-
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" />
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" />
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" />
         </>
     )
 }
