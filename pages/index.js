@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Head from "next/head";
+import Link from "next/link"
 
 export default function Home({ data }) {
     //console.log(data.Data, "=======");
@@ -17,6 +18,7 @@ export default function Home({ data }) {
 
 
 
+
                 <hr />
                 <div className="container mt-3">
                     {Object.keys(data).map((item, i) => {
@@ -24,46 +26,25 @@ export default function Home({ data }) {
 
                             {(data[item].id) ?
                                 <div className=" col-12 col-sm-12 col-md-12 col-xl-6 col-xxl-6" >
-                                    {/* <Link href={`/ItemDetail/${data[item].id}`} ><a>mm</a></Link> */}
-                                    <div className="app-card app-card-doc shadow-sm h-150">
-                                        <img
-                                            className="thumb-image  "
-                                            src={data[item].Image}
-                                            alt=""
-                                        />
-                                        <div className="app-card-body p-1 has-card-actions ml-5">
-                                            <h3 className="product-name"><a href="#">{data[item].Name} </a></h3>
-                                            <div className="app-doc-meta">
-                                                <ul className="list-unstyled mb-0">
-                                                    <li> <h4 className="app-doc-title truncate mb-0"><a href="#file-link">
-                                                        {data[item].Title}</a></h4></li>
-                                                    <li>  <h4 className="product-price">₹{data[item].Price} <del
-                                                        className="">₹{data[item].OldPrice}</del></h4></li>
-                                                    <li> <a className="primary-btn cta-btn" href="#tab1">Shop now</a></li>
-                                                </ul>
+                                    <Link href={`/ItemDetail/${data[item].id}`} ><a>
+                                        <div class="product">
+                                            <div class="img-fluid text-center">
+                                                <img src={data[item].Image} alt="" />
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">{data[item].Name}</p>
+                                                <h3 class="product-name">{data[item].Title}</h3>
+                                                <h4 class="product-price">₹{data[item].Price} <del
+                                                    class="product-old-price">₹{data[item].OldPrice}</del></h4>
+                                            </div>
+                                            <div class="add-to-cart">
+
+                                                <button class="add-to-cart-btn  " ><i class="fa fa-shopping-cart"></i> SHOP NOW
+                                                </button>
+
                                             </div>
                                         </div>
-                                    </div>
-                                    <nav class="navbar   bg-dark navbar-dark">
-
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                            Navbar
-                                        </button>
-                                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                            <ul class="navbar-nav">
-                                                <li class="nav-item h3">
-                                                    <div class="container text-light">
-
-                                                        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-                                                        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-                                                        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-
+                                    </a></Link>
                                 </div>
 
                                 : ""}

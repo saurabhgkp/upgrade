@@ -35,7 +35,7 @@ export default function Navbar() {
 
                             <div class="col-md-3">
                                 <div class="header-logo">
-                                    <a href="#" class="logo">
+                                    <a href="/" class="logo">
                                         <img src="./img/pcology1.png" alt="" />
                                     </a>
                                 </div>
