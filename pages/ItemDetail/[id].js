@@ -99,7 +99,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const id = context.params.id;
-    const res = await fetch(`http://localhost:4000/googleSheet/getDataById/${id}`);
+    const res = await fetch(`https://pcology-api.herokuapp.com/googleSheet/getDataById/${id}`);
     const a = await res.json()
     const data = a.Data
 
