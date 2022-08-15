@@ -1,8 +1,11 @@
 {
+  "/Checkout/[Checkout]": "pages/Checkout/[Checkout].html",
+  "/ItemDetail/[id]": "pages/ItemDetail/[id].js",
+  "/Products": "pages/Products.js",
   "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Checkout/[Checkout]": "pages/Checkout/[Checkout].js",
-  "/ItemDetail/[id]": "pages/ItemDetail/[id].js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
