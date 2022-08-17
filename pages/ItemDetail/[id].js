@@ -1,9 +1,6 @@
 
 import Link from "next/link"
 const ItemDetail = ({ data }) => {
-
-
-
     return (
         <>
 
@@ -29,7 +26,7 @@ const ItemDetail = ({ data }) => {
                                 </div>
                                 <div class="add-to-cart">
                                     <Link href={`/Checkout/${data[0].id}`} ><a>
-                                        <button class="add-to-cart-btn  " ><i class="fa fa-shopping-cart"></i> SHOP NOW
+                                        <button class="btn btn-outline-success " ><i class="fa fa-shopping-cart"></i> SHOP NOW
                                         </button></a></Link>
 
                                 </div>
@@ -38,33 +35,41 @@ const ItemDetail = ({ data }) => {
                     </div>
 
                     <div class="col-sm-7">
-                        <h4><small>{data[0].Name}</small></h4>
+                        <h4><small>{data[0].Title}</small></h4>
                         <hr />
-                        <h2> {data[0].Title}</h2>
-
-                        <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br />
-                        <p className="h4">Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.</p>
+                        <h2> {data[0].Name}</h2>
+                        <p className="h4">{data[0].Details}</p>
                         <br /><br />
                         <div class="row">
-
                             <div class="col-sm-10">
-                                <h4>RAM </h4>
-                                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <br />
+                                <h4>Processe </h4>
+                                <p>{data[0].Processe}</p>
+                                <hr />
                             </div>
-
                             <div class="col-sm-10">
-                                <h4>John Row </h4>
-                                <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum
-                                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua.</p>
-                                <br />
+                                <h4>RAM</h4>
+                                <p>{data[0].RAM}</p>
+                                <hr />
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>SSD</h4>
+                                <p>{data[0].SSD}</p>
+                                <hr />
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>Mother Board</h4>
+                                <p>{data[0].Motherboard}</p>
+                                <hr />
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>SMPS</h4>
+                                <p>{data[0].SMPS}</p>
+                                <hr />
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>Graphic Card</h4>
+                                <p>{data[0].GraphicCard}</p>
+
                             </div>
                         </div>
                     </div>
